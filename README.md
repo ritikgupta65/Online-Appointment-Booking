@@ -4,7 +4,7 @@
     <img src="your-medico-3-high-resolution-logo.png" width="328" alt="" />
 </div>
 
-<img  src="https://readme-typing-svg.herokuapp.com?color=458EEC&center=true&vCenter=true&size=40&width=900&height=80&lines=Empowering+People+to+Improve +Their+Lives" />
+<img src="https://readme-typing-svg.herokuapp.com?color=458EEC&center=true&vCenter=true&size=40&width=900&height=80&lines=Empowering+People+to+Improve+Their+Lives"/>
 
 ## Wbsite overview 
 <div align="center">
