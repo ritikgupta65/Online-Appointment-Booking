@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospitals: Healthcare & Hospitals in India</title>
+    <link rel="stylesheet" href="ritik.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images\your-medico-3-high-resolution-logo.png" alt="Ritik">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search Doctor or Hospital" class="search_box">
+                <button type="submit" class="search_button"><img src="images/icons8-search-50.png" class="search_icon"></button>
+            </div>
+            <div class="header-right">
+                <div class="language-selector">
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <option value="bn">Bengali</option>
+                    </select>
+                </div>
+                <div class="helpline-box">
+                    <span>Our Helpline</span>
+                    <a href="tel:+918069991061" class="helpline-number">+91 6393828666</a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Patient Care</a></li>
+                <li><a href="#">Centres of Excellence</a></li>
+                <li><a href="#">Health Information</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">International patients</a></li>
+                <li><a href="#">Academics & Research</a></li>
+                <li><a onclick=findNearbyHospitals()>Hospitals</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <img class = "Background" src = "https://www.shutterstock.com/image-photo/doctor-show-medical-diagnosis-report-260nw-2347923319.jpg"  alt ="bcgimg">
+            <div class="service-grid">
+                <div class="service-card" onclick="window.location.href='http://localhost:8501'">
+                    <img class="service-card" src="https://imgs.search.brave.com/FzAmgk76xlPw1akdhKO-gmBPAqQmDDF8xa_om-RnjnY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9o/aWdoLWFuZ2xlLXBh/dGllbnQtZmlsbGlu/Zy1jb25zZW50LWRv/Y3VtZW50XzIzLTIx/NDk5NDE0NjUuanBn/P3NlbXQ9YWlzX2h5/YnJpZA" alt="Book Appointment" class="service-image">
+                    <span>Book Appointment</span>
+                </div>
+                <div class="service-card" onclick="openDiseaseModal()">
+                    <img src="https://imgs.search.brave.com/5QknGWd9G5QagBcAnenDbbKzTwmNWCnWjs9pngqZTuc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMjgz/OTI0MDkwL3N0b2Nr/LXBob3RvLWhhcHB5/LWRvY3Rvci13aGl0/ZS1jb2F0LWdsYXNz/ZXMtY3Jvc3NlZC1h/cm1z" alt="Find Doctor" class="service-image">
+                    <span>Find Doctor</span>
+                </div>
+                <div class="service-card" onclick="findNearbyHospitals()">
+                    <img src="https://imgs.search.brave.com/XPTApAIq1QBvVtY5koZlyqB7g57EZLzxAgkaM8OHo84/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ob3NwaXRhbC1i/dWlsZGluZy1yZWQt/Y3Jvc3MtbWVkaWNh/bC1pbnN0aXR1dGlv/bi1oZWFsdGgtdHJl/YXRtZW50LWRpc2Vh/c2Utd2FsbHBhcGVy/LWJhY2tncm91bmRf/MzI3OTAzLTE0MDIz/MzQuanBnP3NlbXQ9/YWlzX2h5YnJpZA" alt="Find Hospital" class="service-image">
+                    <span>Find Hospital</span>
+                </div>
+                <div class="service-card">
+                    <img src="https://imgs.search.brave.com/XQfGx27g-OpEBrxU3YI8_8sikdKzgjGpRDNs9GRqe_c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzQwLzQyLzY2/LzM2MF9GXzI0MDQy/NjY4Ml9XYlIwMHpz/MnEzMmJRV0hvZVlP/WHp6MHFQTUY2TmJY/ay5qcGc" alt="Health Check-Up" class="service-image">
+                    <span>Book Health Check-Up</span>
+                </div>
+                <div class="service-card">
+                    <img src="https://imgs.search.brave.com/ZE2oZolhic9D9SRJHuyf4GQp316CJxVO1W0mlmp_-f0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb25z/dWx0ZG9jLmNvLnVr/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA2L0ZlbWFsZS1Q/YXRpZW50LU9ubGlu/ZS1zY2FsZWQtMS0x/NTM2eDk2MC0xLmpw/Zw" alt="Consult Online" class="service-image">
+                    <span>Consult Online</span>
+                </div>
+                <div class="service-card" onclick="buymed()">
+                    <img src="images/buy-med.jpg" alt="Buy Medicine" class="service-image">
+                    <span>Buy Medicine</span>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to Your Medico! We are dedicated to providing exceptional healthcare services through our platform. Our mission is to connect patients with the best doctors, hospitals, and medical resources to ensure a healthier future for all.</p>
+        </section>
+    
+        <section class="project-info">
+            <h2>Our Aim</h2>
+            <p>Ou aim is to create an accessible healthcare platform that offers a range of services such as booking appointments, consulting online, and finding hospitals or doctors. Our goal is to make healthcare more convenient and efficient for everyone.</p>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>Your Medico</h2>
+                    <p>Connecting you with the best healthcare services and professionals to ensure a healthier future for all.</p>
+                </div>
+                <div class="floating-buttons">
+                    <a href="tel:+918069991061" class="phone-button">
+                        <span class="phone-icon"></span>
+                        +91 8069991061
+                    </a>
+                    <button class="health-checkup-btn">Book Health Check-Up</button>
+                    <button class="appointment-btn">Book Appointment</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Medico. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </main>
+   
+
+    <div id="diseaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDiseaseModal()">&times;</span>
+            <h2>Find Doctor for a Specific Disease</h2>
+            <input type="text" id="diseaseInput" placeholder="Enter disease name">
+            <button onclick="submitDisease()">Search</button>
+        </div>
+    </div>
+    <script src="ritik.js"></script>
+
+</body>
+</html>
+

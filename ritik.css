@@ -1,0 +1,590 @@
+:root {
+  --primary-blue: #0077b6;
+  --accent-green: #00b4d8;
+  --white: #ffffff;
+  --gray-light: #f0f0f0;
+  --text-dark: #333333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--gray-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+body {
+  height: 200vh; /* Forces scroll but isn't dynamic */
+}
+
+/* Header Styles */
+header {
+  background: var(--white);
+  box-shadow: 0 4px 8px var(--shadow);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* Decreased header width */
+  margin: 0 auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8em;
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.logo img {
+  height: 60px;
+  transition: transform 0.2s;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 600px; /* Increased length */
+  width: 100%;
+  height: 40px; /* Decreased height/width */
+  box-shadow: 0 2px 6px var(--shadow);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ced4da;
+}
+.search-container img{
+  width:20px;
+  height: 20px;
+}
+.search_box {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  height: 100%;
+}
+
+.search_button {
+  background: var(--accent-green);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  height: 100%;
+}
+
+.search_button:hover {
+  transform: scale(1.05);
+  background-color: #00a0c9;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Language selector styles */
+.language-selector select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--accent-green);
+  background-color: var(--white);
+  color: var(--text-dark);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.language-selector select:hover,
+.language-selector select:focus {
+  border-color: var(--primary-blue);
+}
+
+/* Helpline box styles */
+.helpline-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-left: 3px solid var(--primary-blue);
+}
+
+.helpline-box span {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.helpline-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.helpline-number:hover {
+  color: var(--accent-green);
+}
+
+.email-button {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.email-button:hover {
+  background: var(--accent-green);
+  transform: scale(1.05);
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem 11rem;
+  background: var(--primary-blue);
+}
+
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, border-radius 0.3s;
+}
+
+.main-nav a:hover {
+  background: var(--accent-green);
+  border-radius: 8px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slideshow-track {
+  display: flex;
+  width: calc(100% * 10); /* 5 slides + 5 duplicates */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: calc(100% / 10);
+  height: 400px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% * 5)); /* Move 5 slides to the left */
+  }
+}
+
+/* Services Section */
+.services {
+  padding: 2rem 2rem;
+  position: relative;
+  /* background: url('images (2).jpeg') no-repeat center center/cover; */
+  margin-top: 10em;
+
+}
+
+.services .Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  /* filter: blur(8px); Adjust blur intensity */
+  opacity: 0.6; 
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4em 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #0077b6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card span {
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #cde8e8;
+  color: black;
+  padding: 5px 10px;
+  border: 0.5px solid #003454;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .slideshow-container {
+    height: 250px;
+  }
+
+  .slide {
+    height: 250px;
+  }
+}
+/* Add this to your ritik.css */
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); /* Adds a subtle blur effect */
+  transition: opacity 0.3s ease; /* Smooth fade-in/out */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: slideIn 0.4s ease-out; /* Slide-in animation */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #ff5a5f;
+}
+
+/* Input and Button Styles */
+.modal input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.modal input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.modal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  width: 100%;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal button:active {
+  transform: scale(0.98);
+}
+
+/* Animation for Modal */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 20% auto;
+    width: 90%;
+  }
+}
+.search-container {
+  border-radius: 2px;
+}
+/* // about us and projct info  */
+/* About Us Section */
+.about-us {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About the Project Section */
+.project-info {
+  padding: 40px 20px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+.project-info h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  bottom: -11px;
+  width: 100%;
+  box-shadow: 0 -4px 8px var(--shadow);
+}
+
+.footer-container{
+  gap: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: var(--accent-green);
+}
+
+.footer-info p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  padding-top: 28px;
+}
+
+.footer-bottom {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+.footer-bottom p {
+padding-top: 10px;
+
+}
+
+/* Floating Buttons Styling */
+.floating-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom:10px ;
+}
+
+.phone-button,
+.health-checkup-btn,
+.appointment-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-button {
+  background-color: #28a745;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.health-checkup-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.appointment-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.phone-button:hover,
+.health-checkup-btn:hover,
+.appointment-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.phone-icon {
+  background-image: url("images/icons8-phone-50.png");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .floating-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Ensure Footer Sticks to Bottom */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* contact us */
+.contact-us-btn {
+  background-color: #007bff; /* Updated to match the webpage's theme */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact-us-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+

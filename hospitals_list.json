@@ -1,0 +1,96 @@
+
+[
+{"name": "Max Super Speciality Hospital", "location": "Lucknow, UP"},
+{"name": "Medanta Super Speciality Hospital", "location": "Lucknow, UP"},
+{"name": "Apollomedics Super Speciality Hospital", "location": "Lucknow, UP"},
+{"name": "Dr. Ram Manohar Lohia Institute of Medical Sciences (RMLIMS)", "location": "Lucknow, UP"},
+{"name": "HealthCity Trauma Centre & Superspeciality Hospital", "location": "Lucknow, UP"},
+{"name": "King George's Medical University (KGMU)", "location": "Lucknow, UP"},
+{"name": "Sahara Hospital", "location": "Lucknow, UP"},
+{"name": "Balaji Hospital", "location": "Lucknow, UP"},
+
+
+{"name": "All India Institute of Medical Sciences (AIIMS)", "location": "Patna, Bihar"},
+{"name": "Rajendra Memorial Research Institute of Medical Sciences", "location": "Patna, Bihar"},
+{"name": "Guru Gobind Singh Hospital", "location": "Patna, Bihar"},
+{"name": "Ford Hospital and Research Centre", "location": "Patna, Bihar"},
+{"name": "Government Tibbi College and Hospital", "location": "Patna, Bihar"},
+{"name": "Paras HMRI Hospital", "location": "Patna, Bihar"},
+{"name": "Ruban Memorial Hospital", "location": "Patna, Bihar"},
+{"name": "Patna Medical College and Hospital", "location": "Patna, Bihar"},
+
+{"name": "All India Institute of Medical Sciences (AIIMS)", "location": "Delhi, Delhi"},
+{"name": "Indraprastha Apollo Hospital", "location": "Delhi, Delhi"},
+{"name": "Fortis Escorts Heart Institute", "location": "Delhi, Delhi"},
+{"name": "Max Super Speciality Hospital, Saket", "location": "Delhi, Delhi"},
+{"name": "Sir Ganga Ram Hospital", "location": "Delhi, Delhi"},
+{"name": "BLK Super Speciality Hospital", "location": "Delhi, Delhi"},
+{"name": "Apollo Spectra Hospitals", "location": "Delhi, Delhi"},
+{"name": "Safdarjung Hospital", "location": "Delhi, Delhi"},
+
+{"name": "Tata Memorial Hospital", "location": "Mumbai, Maharashtra"},
+{"name": "Lilavati Hospital and Research Centre", "location": "Mumbai, Maharashtra"},
+{"name": "Kokilaben Dhirubhai Ambani Hospital", "location": "Mumbai, Maharashtra"},
+{"name": "Jaslok Hospital", "location": "Mumbai, Maharashtra"},
+{"name": "Fortis Hospital, Mulund", "location": "Mumbai, Maharashtra"},
+{"name": "Nanavati Super Speciality Hospital", "location": "Mumbai, Maharashtra"},
+{"name": "Breach Candy Hospital", "location": "Mumbai, Maharashtra"},
+{"name": "Bombay Hospital and Medical Research Centre", "location": "Mumbai, Maharashtra"},
+
+{"name": "Narayana Health City", "location": "Bangalore, Karnataka"},
+{"name": "Manipal Hospital", "location": "Bangalore, Karnataka"},
+{"name": "Fortis Hospital, Bannerghatta Road", "location": "Bangalore, Karnataka"},
+{"name": "Apollo Hospitals, Bannerghatta Road", "location": "Bangalore, Karnataka"},
+{"name": "Columbia Asia Referral Hospital", "location": "Bangalore, Karnataka"},
+{"name": "Mazumdar Shaw Medical Center", "location": "Bangalore, Karnataka"},
+{"name": "Sakra World Hospital", "location": "Bangalore, Karnataka"},
+{"name": "St. John's Medical College Hospital", "location": "Bangalore, Karnataka"},
+
+{"name": "Apollo Hospitals, Greams Road", "location": "Chennai, Tamil Nadu"},
+{"name": "MIOT International Hospital", "location": "Chennai, Tamil Nadu"},
+{"name": "Fortis Malar Hospital", "location": "Chennai, Tamil Nadu"},
+{"name": "Global Hospitals and Health City", "location": "Chennai, Tamil Nadu"},
+{"name": "Sri Ramachandra Medical Centre", "location": "Chennai, Tamil Nadu"},
+{"name": "Billroth Hospitals", "location": "Chennai, Tamil Nadu"},
+{"name": "Chettinad Super Speciality Hospital", "location": "Chennai, Tamil Nadu"},
+
+{"name": "Yashoda Hospitals", "location": "Hyderabad, Telangana"},
+{"name": "Apollo Hospitals, Jubilee Hills", "location": "Hyderabad, Telangana"},
+{"name": "KIMS Hospitals", "location": "Hyderabad, Telangana"},
+{"name": "Continental Hospitals", "location": "Hyderabad, Telangana"},
+{"name": "Care Hospitals", "location": "Hyderabad, Telangana"},
+{"name": "Omega Hospitals", "location": "Hyderabad, Telangana"},
+
+{"name": "Apollo Gleneagles Hospitals", "location": "Kolkata, West Bengal"},
+{"name": "AMRI Hospitals", "location": "Kolkata, West Bengal"},
+{"name": "Fortis Hospital, Anandapur", "location": "Kolkata, West Bengal"},
+{"name": "Ruby General Hospital", "location": "Kolkata, West Bengal"},
+{"name": "Peerless Hospital", "location": "Kolkata, West Bengal"},
+{"name": "SSKM Hospital", "location": "Kolkata, West Bengal"},
+
+{"name": "Ruby Hall Clinic", "location": "Pune, Maharashtra"},
+{"name": "Jehangir Hospital", "location": "Pune, Maharashtra"},
+{"name": "Sahyadri Hospitals", "location": "Pune, Maharashtra"},
+{"name": "Apollo Spectra Hospitals", "location": "Pune, Maharashtra"},
+{"name": "Deenanath Mangeshkar Hospital", "location": "Pune, Maharashtra"},
+
+{"name": "Apollo Hospitals, Ahmedabad", "location": "Ahmedabad, Gujarat"},
+{"name": "Sterling Hospitals", "location": "Ahmedabad, Gujarat"},
+{"name": "CIMS Hospital", "location": "Ahmedabad, Gujarat"},
+{"name": "Zydus Hospitals", "location": "Ahmedabad, Gujarat"},
+
+{"name": "Fortis Escorts Hospital", "location": "Jaipur, Rajasthan"},
+{"name": "Manipal Hospital", "location": "Jaipur, Rajasthan"},
+{"name": "Sawai Man Singh Hospital (SMS)", "location": "Jaipur, Rajasthan"},
+
+{"name": "Post Graduate Institute of Medical Education and Research (PGIMER)", "location": "Chandigarh"},
+{"name": "Fortis Hospital", "location": "Chandigarh"},
+
+{"name": "Aster Medcity", "location": "Kochi, Kerala"},
+{"name": "Amrita Institute of Medical Sciences", "location": "Kochi, Kerala"},
+
+{"name": "CHL Hospitals", "location": "Indore, Madhya Pradesh"},
+{"name": "Bombay Hospital", "location": "Indore, Madhya Pradesh"},
+
+{"name": "Bansal Hospital", "location": "Bhopal, Madhya Pradesh"}
+]
