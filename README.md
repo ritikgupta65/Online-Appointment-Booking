@@ -20,7 +20,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Working Model](#models)
-  - [Model 1](#model1)
+  - [Model 1 (Completed)](#model1)
   - [Model 2](#model2)
 - [Tech Stack](#tech-stack)
 - [Demo](#demo)
@@ -85,17 +85,17 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 ## Working Model
-- **Model 1**
-  - `Autometic appointment booking system` with AI agent assistent by `Voice command` and manual also.
+- **Model 1(Completed)**
+  - `Autometic appointment booking system` with AI agent assistent by `Voice command` and manualy too.
   - Patients choose doctors and time slots based on availability.
   - `Covering 100+ hospitals` and their doctors in Bihar and UP.
   - `Real time health-checkup` and remind about your health risk percentage and health catagory and `visualization and SMS`.
+  - AI-powered doctor recommendation based on symptoms and history.
 
 - **Model 2**
-  - AI-powered doctor recommendation based on symptoms and history.
   - Can take online consulent appointment with top `experienced foreign doctors`
   - Intelligent scheduling to optimize doctor workload.
-  - Proving `personal home appointment`.
+  - Provding `personal home appointment`.
   - `Delevering best quality of medicines` at cheaper rate.
 
 ## Tech Stack
@@ -131,7 +131,7 @@
   - [Google DeepMind](https://deepmind.google/technologies/gemini/) (LLM for AI agent)
     - [Gemini-1.5-flash](#Gemini) ( Gemini Model)
   - [Agno](https://www.agno.com/) (for integrating AI agent to retrive the hospitals details)
-  - [streamlit tool](#audio to text) (For Audio to text)
+  - [Streamlit tool](#audio_to_text) (For Audio to text)
 
 <br>
 
@@ -139,9 +139,10 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 ## Demo
-Here is the quick overview of our project :
+Here is the quick overview of our project(just click on image) :
 
-https://github.com/user-attachments/assets/37a9973b-d42b-4b8f-99db-dd14cf5d069e
+[![Alt Text](https://img.youtube.com/vi/ZDudSHJqcFI/0.jpg)](https://www.youtube.com/watch?v=ZDudSHJqcFI)
+
 
 
 ## Getting Started
